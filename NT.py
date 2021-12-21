@@ -1,6 +1,7 @@
 from Network import Network
 
 N = Network()
+
 _NT = N.network('210.237.99.209/24') # IP/Mask (255.255.255.0 (CIDR : /24))
 
 #print(N.mask) <- output the capacity of mask (in bits) and address of  mask all that in dictionnary positionned in array
