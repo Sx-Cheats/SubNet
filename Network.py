@@ -183,8 +183,7 @@ class Network:
                 del ip                                     
         except Exception:
                 return _err('Error : Invalid Ip')
-             
-               
+        
         return IPV4(self._ip,self._mask)
    def __g_mn(self):
         A,R,O,Mask = [0,0,0,0],0,1.28e2,{}
