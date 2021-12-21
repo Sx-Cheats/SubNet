@@ -2,7 +2,7 @@ from Network import Network
 
 N = Network()
 
-gen_ip = lambda: '.'.join([ randint(1,254).__str__() for x in range(4)])
+gen_ip = lambda: '.'.join([randint(1,254).__str__() for x in range(4)])
 
 _NT = N.network(f'{gen_ip()}/24')  # IP/Mask (255.255.255.0 (CIDR : /24))
 
