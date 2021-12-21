@@ -13,7 +13,7 @@ print(_NT.__get_format__()) # show all formats you can use
 
 print(_NT.get_hosts()) #show hosts usable between first address and  last address
 
-#_NT.output_data() #output data, mask, address of network, Wildcard Mask, First address, last address, Broadcast address, ip class, range address usable etc ... 
+#_NT.output_data() #output data, mask, address of network, Wildcard Mask, First address, last address, broadcast address, ip class, range address usable etc ... 
 
 print(_NT.firsthost()) #get firsthost usable, you can use format (_NT.STR)
 print(_NT.lasthost()) #get lasthost usable, you can use format (_NT.STR)
