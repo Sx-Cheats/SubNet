@@ -17,7 +17,7 @@ def iplen(func):
 
                 return func(*args,**kwargs)
         return check
-class adress_operator:
+class address_operator:
         def _split_s(self,text,step):
                return [(text[x:x+step]).__str__() for x in range(0,text.__len__(),step)]  
         def _bin(self,_A):
@@ -39,7 +39,7 @@ class adress_operator:
 class IPV4(object):
         def __init__(self,ip,mask) -> None:  
            self.__ip = ip
-           self.__AO=adress_operator()
+           self.__AO=address_operator()
            self.CAPACITY_OUTPUT = 2**14-2 #16382 /18
            self.__mask = mask['address']
            self.__capacity = mask['bits_capacity']
