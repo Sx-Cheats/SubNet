@@ -48,7 +48,6 @@ class IPV4(object):
            self.__lasthost = self.__AO._max(self.__capacity,self.__ip)
            self.__mask_generic = self.__AO._sub([255,255,255,255],self.__mask)
            self.__ip_class = 'D (Multicast)' if 239 >= self.__ip[0] >= 224 else 'A' if 127 >= self.__ip[0] >= 0 else'B' if 191 >= self.__ip[0] >= 128 else 'C' if  223 >= self.__ip[0] >= 192 else 'Ip reserved (E+)'
-           
            self.INT=1
            self.BIN=9
            self.STR=3
