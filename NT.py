@@ -9,6 +9,8 @@ _NT.CAPACITY_OUTPUT=254; #change the capacity to output the result of get_hosts(
 
 print(_NT.ip_adress(_NT.STR)) #output netowrk address, STR => address in str (string)
 
+print(_NT.network_adress(_NT.STR)) #get network address
+
 print(_NT.__get_format__()) # show all formats you can use
 
 print(_NT.get_hosts()) #show hosts usable between first address and  last address
