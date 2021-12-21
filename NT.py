@@ -2,7 +2,9 @@ from Network import Network
 
 N = Network()
 
-_NT = N.network('210.237.99.209/24') # IP/Mask (255.255.255.0 (CIDR : /24))
+gen_ip = lambda: '.'.join([ randint(1,254).__str__() for x in range(4)])
+
+_NT = N.network(f'{gen_ip()}/24')  # IP/Mask (255.255.255.0 (CIDR : /24))
 
 #print(N.mask) <- output the capacity of mask (in bits) and address of  mask all that in dictionnary positionned in array
 
