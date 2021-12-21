@@ -4,7 +4,6 @@ class _Error(Exception):
             return self
         def __getattribute__(self, __name: str):
             return self 
-
 def _err(e):
         try:
           raise _Error(e)
