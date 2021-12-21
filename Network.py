@@ -96,7 +96,7 @@ class IPV4(object):
                 return self.__format_adress(format,self.__mask_generic) 
         def mask_capacity(self):
                 return self.__capacity
-        def Broadcast(self,format=1):
+        def broadcast(self,format=1):
                 return self.__format_adress(format,self.__lasthost[:3]+[self.__lasthost[3]+1]) 
 
         def total_hosts(self):
