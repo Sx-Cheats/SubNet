@@ -10,7 +10,6 @@ def _err(e):
           raise _Error(e)
         except _Error as _e:
                 return e
-
 def iplen(func):
         def check(*args,**kwargs):
                 if(args[1].__len__()!=args[2].__len__()):
@@ -24,7 +23,6 @@ class adress_operator:
                return [(text[x:x+step]).__str__() for x in range(0,text.__len__(),step)]  
         def _bin(self,_A):
           return ['{:08b}'.format(x) for x in _A]
-        
         def _bin_to_dec(self,_bin):
                 return [ int(x,2) for x in self._split_s(_bin,8)]
         def _dec(self,_A):
@@ -38,7 +36,7 @@ class adress_operator:
         @iplen
         def _and(self,__A1,__A2):
                 return [ __A1[x]&__A2[x] for x in range(__A1.__len__())]
-    
+        
 class IPV4(object):
         def __init__(self,ip,mask) -> None:  
            self.__ip = ip
