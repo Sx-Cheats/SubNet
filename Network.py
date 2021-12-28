@@ -141,7 +141,7 @@ class IPV4(object):
                 print("First host address =",self.firsthost(self.STR))
                 print("Last host address =",self.lasthost(self.STR))
                 print('___'*11,'\n')
-                print('Broadcast address = ',self.Broadcast(self.STR))
+                print('Broadcast address = ',self.broadcast(self.STR))
                 print('___'*11,'\n')
                 print('Generic mask = ',self.generic_mask(self.STR))
                 print('___'*11,'\n')
