@@ -70,7 +70,7 @@ class IPV4(object):
                 print('IPV4 (object).STR | IPV4  (object).BIN (CODE : 11)')
                 print('___'*18,'\n')
         def __repr__(self) -> str:
-            return ("Subnet Calculator | By: $x-Cheats#9633")
+            return ("Subnet Calculator")
 
         def __format_adress(self,format,adress):
                 if(format==3):
