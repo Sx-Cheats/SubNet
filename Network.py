@@ -149,8 +149,7 @@ class IPV4(object):
                 print('___'*11,'\n')
                 print('Range of address usable = \n\t', '\n\t'.join(self.get_hosts(self.STR)))
                 print('___'*11,'\n')
-
-
+                
 class Network:
         
    def __init__(self) -> None:
@@ -196,6 +195,4 @@ class Network:
                         R+= 1
         del A,R,O
         return Mask
-       
-
-
+    
