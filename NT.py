@@ -24,9 +24,3 @@ print(_NT.firsthost()) #get firsthost usable, you can use format (_NT.STR)
 print(_NT.lasthost()) #get lasthost usable, you can use format (_NT.STR)
 
 print(_NT.ip_class()) #get class of ip
-
-
-
-print(_NT) # ???
-
-#I m lazy to explain alls, so i let you explore this script :D
