@@ -29,7 +29,6 @@ class address_operator:
                 return self._bin_to_dec(('0'+('1'*(__C-1))+(''.join(self._bin(__A1))[::-1])[__C:])[::-1])
         @iplen
         def _sub(self,__A1, __A2):
-  
                 return [ __A1[x]-__A2[x] for x in range(__A1.__len__())]
         @iplen
         def _and(self,__A1,__A2):
